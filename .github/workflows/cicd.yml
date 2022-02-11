@@ -17,8 +17,7 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-      - name: Test
-        run: dotnet test --no-build
+      
       - name: Publish
         run: dotnet publish APIForMongoDBQuickstart-WebAPI.csproj -c Release -o website
       - name: Upload Artifact

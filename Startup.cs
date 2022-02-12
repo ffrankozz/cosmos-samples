@@ -45,11 +45,11 @@ namespace cosmos_samples
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "cosmos_samples v1"));
+               
             }
-
-            //app.UseHttpsRedirection();
+             app.UseSwagger();
+             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "cosmos_samples v1"));
+             app.UseHttpsRedirection();
 
             app.UseRouting();
 
